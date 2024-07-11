@@ -36,11 +36,12 @@ function k() {
 
 function r() {
     const s = new Date();
+    let u = 0;
     if (e(s)) {
         const t = k();
-        const u = t * d;
-        document.querySelector('.t').textContent = `$${u.toFixed(4)}`;
+        u = t * d;
     }
+    document.querySelector('.t').textContent = `$${u.toFixed(4)}`;
 }
 
 setInterval(r, 10);
