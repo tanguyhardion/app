@@ -34,9 +34,10 @@ function k() {
     return m;
 }
 
+let u = 0;
+
 function r() {
     const s = new Date();
-    let u = 0;
     if (e(s)) {
         const t = k();
         u = t * d;
@@ -44,4 +45,9 @@ function r() {
     document.querySelector('.t').textContent = `$${u.toFixed(4)}`;
 }
 
-setInterval(r, 10);
+
+const initialTime = k();
+u = initialTime * d;
+document.querySelector('.t').textContent = `$${u.toFixed(4)}`;
+
+setInterval(r, 40); 
