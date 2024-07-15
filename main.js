@@ -42,7 +42,7 @@ function r() {
         const t = k();
         u = t * d;
     }
-    document.querySelector('.t').textContent = `$${u.toFixed(4)}`;
+    document.querySelector('.t').textContent = `${u.toFixed(4)}`;
 }
 
 
@@ -50,4 +50,4 @@ const initialTime = k();
 u = initialTime * d;
 document.querySelector('.t').textContent = `$${u.toFixed(4)}`;
 
-setInterval(r, 40); 
+setInterval(r, 25); 
